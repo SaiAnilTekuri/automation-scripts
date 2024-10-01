@@ -32,11 +32,11 @@ This script fetches the list of watchers (subscribers) for a given GitHub reposi
 
 This script lists various AWS resources such as EC2 instance IDs, S3 buckets, Lambda functions, and IAM users using the AWS CLI.
 
-- **Script**: `aws_resource_list.sh`
+- **Script**: `aws_resource_monitor.sh`
 `
 - **Usage**:
   ```bash
-  ./aws_resource_list.sh
+  ./aws_resource_monitor.sh
 
 - **Dependencies**:
   - **aws CLI**: (https://aws.amazon.com/cli/)
