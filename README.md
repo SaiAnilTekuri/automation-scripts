@@ -16,7 +16,13 @@ These scripts are designed to work on Unix-like systems such as Linux and macOS.
 
 This script fetches the list of watchers (subscribers) for a given GitHub repository using the GitHub API.
 
-- **Script**: `list_github_watchers.sh`
+- **Script**: `fetch_github_repo_watchers.sh`
 - **Usage**: 
   ```bash
-  ./list_github_watchers.sh <owner> <repository>
+  ./fetch_github_repo_watchers.sh <owner> <repository>
+
+**Dependencies**: curl, jq
+
+**Environment Variables**:
+- **username**: Your GitHub username.
+- **token**: Your GitHub personal access token.
