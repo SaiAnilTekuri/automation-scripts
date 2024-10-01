@@ -5,6 +5,7 @@ A collection of useful shell scripts to automate various tasks such as interacti
 ## Table of Contents
 - [Scripts Overview](#scripts-overview)
   - [List GitHub Watchers](#list-github-watchers)
+  - [List AWS Resources](#list-aws-resources)
 
 ## Getting Started
 
@@ -21,8 +22,22 @@ This script fetches the list of watchers (subscribers) for a given GitHub reposi
   ```bash
   ./fetch_github_repo_watchers.sh <owner> <repository>
 
-**Dependencies**: curl, jq
+- **Dependencies**: curl, jq
 
-**Environment Variables**:
-- **username**: Your GitHub username.
-- **token**: Your GitHub personal access token.
+- **Environment Variables**:
+  - **username**: Your GitHub username.
+  - **token**: Your GitHub personal access token.
+
+### List AWS Resources
+
+This script lists various AWS resources such as EC2 instance IDs, S3 buckets, Lambda functions, and IAM users using the AWS CLI.
+
+- **Script**: `aws_resource_list.sh`
+`
+- **Usage**:
+  ```bash
+  ./aws_resource_list.sh
+
+- **Dependencies**:
+  - **aws CLI**: (https://aws.amazon.com/cli/)
+  - **jq**: (https://stedolan.github.io/jq/)
